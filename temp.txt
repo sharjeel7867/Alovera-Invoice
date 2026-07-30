@@ -1,2 +1,1 @@
-?? auto_push.bat
-?? temp.txt
+ M temp.txt
