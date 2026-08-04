@@ -1,0 +1,38 @@
+{
+  "name": "alover-invoice",
+  "version": "1.0.0",
+  "description": "Alover Invoice App",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "build": {
+    "appId": "com.aloverinvoice.app",
+    "productName": "Alover Invoice",
+    "mac": {
+      "category": "public.app-category.business"
+    },
+    "win": {
+      "target": "nsis",
+      "icon": "src/icon.ico"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sharjeel7867/Alovera-Invoice.git"
+  },
+  "keywords": [],
+  "author": "Alover Invoice Team",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/sharjeel7867/Alovera-Invoice/issues"
+  },
+  "homepage": "https://github.com/sharjeel7867/Alovera-Invoice#readme",
+  "devDependencies": {
+    "electron": "^43.2.0",
+    "electron-builder": "^26.15.3"
+  }
+}
