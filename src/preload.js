@@ -2,7 +2,8 @@ const { contextBridge, ipcRenderer } = require('electron');
 
 contextBridge.exposeInMainWorld('electronAPI', {
   loadData: () => ipcRenderer.invoke('load-data'),
-  saveData: (data) => ipcRenderer.invoke('save-data', data)
+  saveData: (data) => ipcRenderer.invoke('save-data', data),
+  savePDFDialog: (params) => ipcRenderer.invoke('save-pdf-dialog', params)
 });
 
 window.addEventListener('DOMContentLoaded', () => {

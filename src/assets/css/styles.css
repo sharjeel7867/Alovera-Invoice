@@ -157,6 +157,12 @@ h1, h2, h3, h4, h5, h6 {
     gap: 1rem;
 }
 
+.form-row-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+}
+
 label {
     font-size: 0.75rem;
     font-weight: 600;
@@ -222,6 +228,41 @@ input:focus, textarea:focus, select:focus {
 }
 
 .search-box input:focus {
+    box-shadow: none;
+    background: transparent;
+}
+
+.date-filter {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    background: #f8fafc;
+    padding: 0.25rem 0.75rem;
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border-color);
+    transition: var(--transition);
+}
+
+.date-filter:focus-within {
+    border-color: var(--primary-500);
+    background-color: #fff;
+    box-shadow: 0 0 0 3px var(--primary-100);
+}
+
+.date-filter input[type="date"] {
+    border: none;
+    background: transparent;
+    padding: 0.25rem;
+    color: var(--gray-700);
+    font-size: 0.85rem;
+    font-weight: 500;
+    outline: none;
+    cursor: pointer;
+    box-shadow: none;
+    width: auto;
+}
+
+.date-filter input[type="date"]:focus {
     box-shadow: none;
     background: transparent;
 }

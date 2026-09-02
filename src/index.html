@@ -79,6 +79,9 @@
                                 <i data-lucide="x" style="width: 0.875rem; height: 0.875rem;"></i>
                             </button>
                         </div>
+                        <button class="btn btn-secondary" id="btn-download-filtered-invoices" style="display: none;">
+                            <i data-lucide="download"></i> Download Invoices
+                        </button>
                         <button class="btn btn-primary" id="btn-create-invoice">
                             <i data-lucide="plus"></i> Create Invoice
                         </button>
@@ -167,6 +170,9 @@
                         </tbody>
                     </table>
                 </div>
+                
+                <!-- Hidden In-DOM Filtered Invoices Report Container -->
+                <div id="filtered-report-document" class="invoice-document" style="display: none; width: 210mm; min-height: 280mm; background: #ffffff; padding: 1.5rem 2.5rem; margin: 2rem auto; box-sizing: border-box; box-shadow: 0 0 20px rgba(0,0,0,0.1);"></div>
             </section>
 
             <!-- New/Edit Customer View -->
@@ -279,6 +285,9 @@
                         <button class="btn btn-secondary btn-back-dashboard">
                             <i data-lucide="arrow-left"></i> Back
                         </button>
+                        <button class="btn btn-secondary" id="btn-editor-download-pdf">
+                            <i data-lucide="download"></i> Download PDF
+                        </button>
                         <button class="btn btn-secondary" id="btn-preview">
                             <i data-lucide="eye"></i> Preview
                         </button>
@@ -308,7 +317,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="form-row">
+                                <div class="form-row-3">
                                     <div class="form-group" style="position: relative;">
                                         <label for="clientName">Client Name</label>
                                         <input type="text" id="clientName" required placeholder="John Doe" autocomplete="off">
@@ -316,22 +325,22 @@
                                     </div>
                                     <div class="form-group">
                                         <label for="clientMobile">Mobile Number (Optional)</label>
-                                        <input type="text" id="clientMobile" placeholder="0551234567" oninput="this.value = this.value.replace(/[^0-9]/g, '')">
+                                        <input type="text" id="clientMobile" placeholder="0551234567">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="clientTRN">Customer TRN</label>
+                                        <input type="text" id="clientTRN" maxlength="15" placeholder="123456789012345">
                                     </div>
                                 </div>
-                                <div class="form-row">
-                                    <div class="form-group" style="grid-column: span 2;">
+                                <div class="form-row" style="grid-template-columns: 1fr 2fr;">
+                                    <div class="form-group">
                                         <label for="clientEmail">Email (Optional)</label>
                                         <input type="email" id="clientEmail" placeholder="john@example.com">
                                     </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="clientAddress">Billing Address</label>
-                                    <textarea id="clientAddress" rows="2" placeholder="123 Main St..."></textarea>
-                                </div>
-                                <div class="form-group">
-                                    <label for="clientTRN">Customer TRN</label>
-                                    <input type="text" id="clientTRN" maxlength="15" minlength="15" pattern="\d{15}" title="TRN must be exactly 15 digits" placeholder="123456789012345" oninput="this.value = this.value.replace(/[^0-9]/g, '')">
+                                    <div class="form-group">
+                                        <label for="clientAddress">Billing Address</label>
+                                        <input type="text" id="clientAddress" placeholder="123 Main St, City, UAE">
+                                    </div>
                                 </div>
                             </div>
 

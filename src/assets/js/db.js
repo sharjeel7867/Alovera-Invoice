@@ -13,16 +13,43 @@ class InvoiceDB {
 
     async init() {
         try {
+            let hasLoadedData = false;
+
+            // 1. Try Electron IPC
             if (window.electronAPI && window.electronAPI.loadData) {
-                const loadedData = await window.electronAPI.loadData();
-                if (loadedData) {
-                    if (loadedData.invoices) this.data.invoices = loadedData.invoices;
-                    if (loadedData.customers) this.data.customers = loadedData.customers;
-                    if (loadedData.settings) Object.assign(this.data.settings, loadedData.settings);
+                try {
+                    const loadedData = await window.electronAPI.loadData();
+                    if (loadedData && (loadedData.invoices?.length > 0 || loadedData.customers?.length > 0)) {
+                        if (loadedData.invoices) this.data.invoices = loadedData.invoices;
+                        if (loadedData.customers) this.data.customers = loadedData.customers;
+                        if (loadedData.settings) Object.assign(this.data.settings, loadedData.settings);
+                        hasLoadedData = true;
+                    }
+                } catch (e) {
+                    console.warn("Electron load error:", e);
                 }
-            } else {
-                console.warn("electronAPI not found. Running in ephemeral mode.");
             }
+
+            // 2. Check localStorage (as backup / web mode)
+            try {
+                const localStr = localStorage.getItem('alover_invoice_data');
+                if (localStr) {
+                    const localData = JSON.parse(localStr);
+                    if (localData) {
+                        if (!hasLoadedData && (localData.invoices?.length > 0 || localData.customers?.length > 0)) {
+                            if (localData.invoices) this.data.invoices = localData.invoices;
+                            if (localData.customers) this.data.customers = localData.customers;
+                            if (localData.settings) Object.assign(this.data.settings, localData.settings);
+                            hasLoadedData = true;
+                        }
+                    }
+                }
+            } catch (lsErr) {
+                console.warn("localStorage read error:", lsErr);
+            }
+
+            // Always sync both destinations
+            await this._save();
         } catch (error) {
             console.error("Database initialization error:", error);
             throw error;
@@ -30,8 +57,19 @@ class InvoiceDB {
     }
 
     async _save() {
+        // Save to Electron IPC if available
         if (window.electronAPI && window.electronAPI.saveData) {
-            await window.electronAPI.saveData(this.data);
+            try {
+                await window.electronAPI.saveData(this.data);
+            } catch (e) {
+                console.warn("Electron save error:", e);
+            }
+        }
+        // Always save to localStorage so it works in every context
+        try {
+            localStorage.setItem('alover_invoice_data', JSON.stringify(this.data));
+        } catch (lsErr) {
+            console.warn("localStorage save error:", lsErr);
         }
     }
 

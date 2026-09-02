@@ -1,4 +1,4 @@
-const { app, BrowserWindow, ipcMain } = require('electron');
+const { app, BrowserWindow, ipcMain, dialog } = require('electron');
 const path = require('path');
 const fs = require('fs');
 
@@ -27,13 +27,43 @@ function createWindow() {
 // This method will be called when Electron has finished
 // initialization and is ready to create browser windows.
 app.whenReady().then(() => {
-  const dataFilePath = path.join(app.getPath('userData'), 'database.json');
+  const primaryDir = app.getPath('userData');
+  if (!fs.existsSync(primaryDir)) {
+    fs.mkdirSync(primaryDir, { recursive: true });
+  }
+  const dataFilePath = path.join(primaryDir, 'database.json');
+
+  // Fallback and legacy paths for cross-environment safety
+  const fallbackPaths = [
+    path.join(app.getPath('appData'), 'alover-invoice', 'database.json'),
+    path.join(app.getPath('appData'), 'Alover Invoice', 'database.json'),
+    path.join(__dirname, '..', 'database.json')
+  ];
 
   ipcMain.handle('load-data', async () => {
     try {
       if (fs.existsSync(dataFilePath)) {
         const data = fs.readFileSync(dataFilePath, 'utf8');
-        return JSON.parse(data);
+        const parsed = JSON.parse(data);
+        if (parsed && (parsed.invoices?.length > 0 || parsed.customers?.length > 0)) {
+          return parsed;
+        }
+      }
+
+      // Check fallback paths if primary file doesn't exist or is empty
+      for (const fbPath of fallbackPaths) {
+        if (fs.existsSync(fbPath)) {
+          const data = fs.readFileSync(fbPath, 'utf8');
+          const parsed = JSON.parse(data);
+          if (parsed && (parsed.invoices?.length > 0 || parsed.customers?.length > 0)) {
+            try {
+              fs.writeFileSync(dataFilePath, JSON.stringify(parsed, null, 2), 'utf8');
+            } catch (wErr) {
+              console.error('Failed to sync to primary path', wErr);
+            }
+            return parsed;
+          }
+        }
       }
     } catch (error) {
       console.error('Failed to load data', error);
@@ -44,9 +74,46 @@ app.whenReady().then(() => {
   ipcMain.handle('save-data', async (event, data) => {
     try {
       fs.writeFileSync(dataFilePath, JSON.stringify(data, null, 2), 'utf8');
+
+      // Also backup to existing fallback directories
+      for (const fbPath of fallbackPaths) {
+        try {
+          const dir = path.dirname(fbPath);
+          if (fs.existsSync(dir)) {
+            fs.writeFileSync(fbPath, JSON.stringify(data, null, 2), 'utf8');
+          }
+        } catch (bErr) {
+          // ignore secondary backup errors
+        }
+      }
+
       return { success: true };
     } catch (error) {
       console.error('Failed to save data', error);
+      return { success: false, error: error.message };
+    }
+  });
+
+  ipcMain.handle('save-pdf-dialog', async (event, { defaultFilename, bufferData, base64Data }) => {
+    try {
+      const win = BrowserWindow.getFocusedWindow() || (BrowserWindow.getAllWindows().length > 0 ? BrowserWindow.getAllWindows()[0] : null);
+      const options = {
+        title: 'Save PDF',
+        defaultPath: defaultFilename || 'Invoice.pdf',
+        filters: [{ name: 'PDF Documents (*.pdf)', extensions: ['pdf'] }]
+      };
+      
+      const { canceled, filePath } = win ? await dialog.showSaveDialog(win, options) : await dialog.showSaveDialog(options);
+
+      if (canceled || !filePath) {
+        return { success: false, canceled: true };
+      }
+
+      const buffer = bufferData ? Buffer.from(bufferData) : Buffer.from(base64Data, 'base64');
+      fs.writeFileSync(filePath, buffer);
+      return { success: true, filePath };
+    } catch (error) {
+      console.error('Failed to save PDF via dialog', error);
       return { success: false, error: error.message };
     }
   });

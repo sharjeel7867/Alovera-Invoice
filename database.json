@@ -1,0 +1,1511 @@
+{
+  "invoices": [
+    {
+      "id": "INV-178587494579750",
+      "serial": "1050",
+      "date": "2026-08-04",
+      "client": {
+        "id": "CUST-17858749457946",
+        "name": "Customer 6 LLC",
+        "mobile": "0550000006",
+        "email": "contact@customer6.com",
+        "address": "Street 6, Dubai, UAE",
+        "trn": "100000000000006",
+        "dateAdded": "2024-01-01"
+      },
+      "items": [
+        {
+          "desc": "Landscaping service - Month 3",
+          "qty": 1,
+          "price": 1000
+        }
+      ],
+      "taxRate": 5,
+      "subtotal": 1000,
+      "taxAmount": 50,
+      "total": 1050,
+      "createdAt": "2026-08-04T20:22:25.797Z"
+    },
+    {
+      "id": "INV-178587494579749",
+      "serial": "1049",
+      "date": "2026-08-03",
+      "client": {
+        "id": "CUST-17858749457945",
+        "name": "Customer 5 LLC",
+        "mobile": "0550000005",
+        "email": "contact@customer5.com",
+        "address": "Street 5, Dubai, UAE",
+        "trn": "100000000000005",
+        "dateAdded": "2024-01-01"
+      },
+      "items": [
+        {
+          "desc": "Landscaping service - Month 2",
+          "qty": 1,
+          "price": 990
+        }
+      ],
+      "taxRate": 5,
+      "subtotal": 990,
+      "taxAmount": 49.5,
+      "total": 1039.5,
+      "createdAt": "2026-08-04T20:22:25.797Z"
+    },
+    {
+      "id": "INV-178587494579747",
+      "serial": "1047",
+      "date": "2026-08-01",
+      "client": {
+        "id": "CUST-17858749457943",
+        "name": "Customer 3 LLC",
+        "mobile": "0550000003",
+        "email": "contact@customer3.com",
+        "address": "Street 3, Dubai, UAE",
+        "trn": "100000000000003",
+        "dateAdded": "2024-01-01"
+      },
+      "items": [
+        {
+          "desc": "Landscaping service - Month 12",
+          "qty": 1,
+          "price": 970
+        }
+      ],
+      "taxRate": 5,
+      "subtotal": 970,
+      "taxAmount": 48.5,
+      "total": 1018.5,
+      "createdAt": "2026-08-04T20:22:25.797Z"
+    },
+    {
+      "id": "INV-178587494579746",
+      "serial": "1046",
+      "date": "2026-07-31",
+      "client": {
+        "id": "CUST-17858749457942",
+        "name": "Customer 2 LLC",
+        "mobile": "0550000002",
+        "email": "contact@customer2.com",
+        "address": "Street 2, Dubai, UAE",
+        "trn": "100000000000002",
+        "dateAdded": "2024-01-01"
+      },
+      "items": [
+        {
+          "desc": "Landscaping service - Month 11",
+          "qty": 1,
+          "price": 960
+        }
+      ],
+      "taxRate": 5,
+      "subtotal": 960,
+      "taxAmount": 48,
+      "total": 1008,
+      "createdAt": "2026-08-04T20:22:25.797Z"
+    },
+    {
+      "id": "INV-178587494579745",
+      "serial": "1045",
+      "date": "2026-07-30",
+      "client": {
+        "id": "CUST-17858749457941",
+        "name": "Customer 1 LLC",
+        "mobile": "0550000001",
+        "email": "contact@customer1.com",
+        "address": "Street 1, Dubai, UAE",
+        "trn": "100000000000001",
+        "dateAdded": "2024-01-01"
+      },
+      "items": [
+        {
+          "desc": "Landscaping service - Month 10",
+          "qty": 1,
+          "price": 950
+        },
+        {
+          "desc": "Extra materials for irrigation",
+          "qty": 2,
+          "price": 150
+        }
+      ],
+      "taxRate": 5,
+      "subtotal": 1250,
+      "taxAmount": 62.5,
+      "total": 1312.5,
+      "createdAt": "2026-08-04T20:22:25.797Z"
+    },
+    {
+      "id": "INV-178587494579744",
+      "serial": "1044",
+      "date": "2026-07-29",
+      "client": {
+        "id": "CUST-178587494579415",
+        "name": "Customer 15 LLC",
+        "mobile": "0550000015",
+        "email": "contact@customer15.com",
+        "address": "Street 15, Dubai, UAE",
+        "trn": "100000000000015",
+        "dateAdded": "2024-01-01"
+      },
+      "items": [
+        {
+          "desc": "Landscaping service - Month 9",
+          "qty": 1,
+          "price": 940
+        }
+      ],
+      "taxRate": 5,
+      "subtotal": 940,
+      "taxAmount": 47,
+      "total": 987,
+      "createdAt": "2026-08-04T20:22:25.797Z"
+    },
+    {
+      "id": "INV-178587494579743",
+      "serial": "1043",
+      "date": "2026-07-28",
+      "client": {
+        "id": "CUST-178587494579414",
+        "name": "Customer 14 LLC",
+        "mobile": "0550000014",
+        "email": "contact@customer14.com",
+        "address": "Street 14, Dubai, UAE",
+        "trn": "100000000000014",
+        "dateAdded": "2024-01-01"
+      },
+      "items": [
+        {
+          "desc": "Landscaping service - Month 8",
+          "qty": 1,
+          "price": 930
+        }
+      ],
+      "taxRate": 5,
+      "subtotal": 930,
+      "taxAmount": 46.5,
+      "total": 976.5,
+      "createdAt": "2026-08-04T20:22:25.797Z"
+    },
+    {
+      "id": "INV-178587494579742",
+      "serial": "1042",
+      "date": "2026-07-27",
+      "client": {
+        "id": "CUST-178587494579413",
+        "name": "Customer 13 LLC",
+        "mobile": "0550000013",
+        "email": "contact@customer13.com",
+        "address": "Street 13, Dubai, UAE",
+        "trn": "100000000000013",
+        "dateAdded": "2024-01-01"
+      },
+      "items": [
+        {
+          "desc": "Landscaping service - Month 7",
+          "qty": 1,
+          "price": 920
+        },
+        {
+          "desc": "Extra materials for irrigation",
+          "qty": 2,
+          "price": 150
+        }
+      ],
+      "taxRate": 5,
+      "subtotal": 1220,
+      "taxAmount": 61,
+      "total": 1281,
+      "createdAt": "2026-08-04T20:22:25.797Z"
+    },
+    {
+      "id": "INV-178587494579741",
+      "serial": "1041",
+      "date": "2026-07-26",
+      "client": {
+        "id": "CUST-178587494579412",
+        "name": "Customer 12 LLC",
+        "mobile": "0550000012",
+        "email": "contact@customer12.com",
+        "address": "Street 12, Dubai, UAE",
+        "trn": "100000000000012",
+        "dateAdded": "2024-01-01"
+      },
+      "items": [
+        {
+          "desc": "Landscaping service - Month 6",
+          "qty": 1,
+          "price": 910
+        }
+      ],
+      "taxRate": 5,
+      "subtotal": 910,
+      "taxAmount": 45.5,
+      "total": 955.5,
+      "createdAt": "2026-08-04T20:22:25.797Z"
+    },
+    {
+      "id": "INV-178587494579740",
+      "serial": "1040",
+      "date": "2026-07-25",
+      "client": {
+        "id": "CUST-178587494579411",
+        "name": "Customer 11 LLC",
+        "mobile": "0550000011",
+        "email": "contact@customer11.com",
+        "address": "Street 11, Dubai, UAE",
+        "trn": "100000000000011",
+        "dateAdded": "2024-01-01"
+      },
+      "items": [
+        {
+          "desc": "Landscaping service - Month 5",
+          "qty": 1,
+          "price": 900
+        }
+      ],
+      "taxRate": 5,
+      "subtotal": 900,
+      "taxAmount": 45,
+      "total": 945,
+      "createdAt": "2026-08-04T20:22:25.797Z"
+    },
+    {
+      "id": "INV-178587494579739",
+      "serial": "1039",
+      "date": "2026-07-24",
+      "client": {
+        "id": "CUST-178587494579410",
+        "name": "Customer 10 LLC",
+        "mobile": "0550000010",
+        "email": "contact@customer10.com",
+        "address": "Street 10, Dubai, UAE",
+        "trn": "100000000000010",
+        "dateAdded": "2024-01-01"
+      },
+      "items": [
+        {
+          "desc": "Landscaping service - Month 4",
+          "qty": 1,
+          "price": 890
+        },
+        {
+          "desc": "Extra materials for irrigation",
+          "qty": 2,
+          "price": 150
+        }
+      ],
+      "taxRate": 5,
+      "subtotal": 1190,
+      "taxAmount": 59.5,
+      "total": 1249.5,
+      "createdAt": "2026-08-04T20:22:25.797Z"
+    },
+    {
+      "id": "INV-178587494579738",
+      "serial": "1038",
+      "date": "2026-07-23",
+      "client": {
+        "id": "CUST-17858749457949",
+        "name": "Customer 9 LLC",
+        "mobile": "0550000009",
+        "email": "contact@customer9.com",
+        "address": "Street 9, Dubai, UAE",
+        "trn": "100000000000009",
+        "dateAdded": "2024-01-01"
+      },
+      "items": [
+        {
+          "desc": "Landscaping service - Month 3",
+          "qty": 1,
+          "price": 880
+        }
+      ],
+      "taxRate": 5,
+      "subtotal": 880,
+      "taxAmount": 44,
+      "total": 924,
+      "createdAt": "2026-08-04T20:22:25.797Z"
+    },
+    {
+      "id": "INV-178587494579737",
+      "serial": "1037",
+      "date": "2026-07-22",
+      "client": {
+        "id": "CUST-17858749457948",
+        "name": "Customer 8 LLC",
+        "mobile": "0550000008",
+        "email": "contact@customer8.com",
+        "address": "Street 8, Dubai, UAE",
+        "trn": "100000000000008",
+        "dateAdded": "2024-01-01"
+      },
+      "items": [
+        {
+          "desc": "Landscaping service - Month 2",
+          "qty": 1,
+          "price": 870
+        }
+      ],
+      "taxRate": 5,
+      "subtotal": 870,
+      "taxAmount": 43.5,
+      "total": 913.5,
+      "createdAt": "2026-08-04T20:22:25.797Z"
+    },
+    {
+      "id": "INV-178587494579736",
+      "serial": "1036",
+      "date": "2026-07-21",
+      "client": {
+        "id": "CUST-17858749457947",
+        "name": "Customer 7 LLC",
+        "mobile": "0550000007",
+        "email": "contact@customer7.com",
+        "address": "Street 7, Dubai, UAE",
+        "trn": "100000000000007",
+        "dateAdded": "2024-01-01"
+      },
+      "items": [
+        {
+          "desc": "Landscaping service - Month 1",
+          "qty": 1,
+          "price": 860
+        },
+        {
+          "desc": "Extra materials for irrigation",
+          "qty": 2,
+          "price": 150
+        }
+      ],
+      "taxRate": 5,
+      "subtotal": 1160,
+      "taxAmount": 58,
+      "total": 1218,
+      "createdAt": "2026-08-04T20:22:25.797Z"
+    },
+    {
+      "id": "INV-178587494579735",
+      "serial": "1035",
+      "date": "2026-07-20",
+      "client": {
+        "id": "CUST-17858749457946",
+        "name": "Customer 6 LLC",
+        "mobile": "0550000006",
+        "email": "contact@customer6.com",
+        "address": "Street 6, Dubai, UAE",
+        "trn": "100000000000006",
+        "dateAdded": "2024-01-01"
+      },
+      "items": [
+        {
+          "desc": "Landscaping service - Month 12",
+          "qty": 1,
+          "price": 850
+        }
+      ],
+      "taxRate": 5,
+      "subtotal": 850,
+      "taxAmount": 42.5,
+      "total": 892.5,
+      "createdAt": "2026-08-04T20:22:25.797Z"
+    },
+    {
+      "id": "INV-178587494579734",
+      "serial": "1034",
+      "date": "2026-07-19",
+      "client": {
+        "id": "CUST-17858749457945",
+        "name": "Customer 5 LLC",
+        "mobile": "0550000005",
+        "email": "contact@customer5.com",
+        "address": "Street 5, Dubai, UAE",
+        "trn": "100000000000005",
+        "dateAdded": "2024-01-01"
+      },
+      "items": [
+        {
+          "desc": "Landscaping service - Month 11",
+          "qty": 1,
+          "price": 840
+        }
+      ],
+      "taxRate": 5,
+      "subtotal": 840,
+      "taxAmount": 42,
+      "total": 882,
+      "createdAt": "2026-08-04T20:22:25.797Z"
+    },
+    {
+      "id": "INV-178587494579733",
+      "serial": "1033",
+      "date": "2026-07-18",
+      "client": {
+        "id": "CUST-17858749457944",
+        "name": "Customer 4 LLC",
+        "mobile": "0550000004",
+        "email": "contact@customer4.com",
+        "address": "Street 4, Dubai, UAE",
+        "trn": "100000000000004",
+        "dateAdded": "2024-01-01"
+      },
+      "items": [
+        {
+          "desc": "Landscaping service - Month 10",
+          "qty": 1,
+          "price": 830
+        },
+        {
+          "desc": "Extra materials for irrigation",
+          "qty": 2,
+          "price": 150
+        }
+      ],
+      "taxRate": 5,
+      "subtotal": 1130,
+      "taxAmount": 56.5,
+      "total": 1186.5,
+      "createdAt": "2026-08-04T20:22:25.797Z"
+    },
+    {
+      "id": "INV-178587494579732",
+      "serial": "1032",
+      "date": "2026-07-17",
+      "client": {
+        "id": "CUST-17858749457943",
+        "name": "Customer 3 LLC",
+        "mobile": "0550000003",
+        "email": "contact@customer3.com",
+        "address": "Street 3, Dubai, UAE",
+        "trn": "100000000000003",
+        "dateAdded": "2024-01-01"
+      },
+      "items": [
+        {
+          "desc": "Landscaping service - Month 9",
+          "qty": 1,
+          "price": 820
+        }
+      ],
+      "taxRate": 5,
+      "subtotal": 820,
+      "taxAmount": 41,
+      "total": 861,
+      "createdAt": "2026-08-04T20:22:25.797Z"
+    },
+    {
+      "id": "INV-178587494579731",
+      "serial": "1031",
+      "date": "2026-07-16",
+      "client": {
+        "id": "CUST-17858749457942",
+        "name": "Customer 2 LLC",
+        "mobile": "0550000002",
+        "email": "contact@customer2.com",
+        "address": "Street 2, Dubai, UAE",
+        "trn": "100000000000002",
+        "dateAdded": "2024-01-01"
+      },
+      "items": [
+        {
+          "desc": "Landscaping service - Month 8",
+          "qty": 1,
+          "price": 810
+        }
+      ],
+      "taxRate": 5,
+      "subtotal": 810,
+      "taxAmount": 40.5,
+      "total": 850.5,
+      "createdAt": "2026-08-04T20:22:25.797Z"
+    },
+    {
+      "id": "INV-178587494579730",
+      "serial": "1030",
+      "date": "2026-07-15",
+      "client": {
+        "id": "CUST-17858749457941",
+        "name": "Customer 1 LLC",
+        "mobile": "0550000001",
+        "email": "contact@customer1.com",
+        "address": "Street 1, Dubai, UAE",
+        "trn": "100000000000001",
+        "dateAdded": "2024-01-01"
+      },
+      "items": [
+        {
+          "desc": "Landscaping service - Month 7",
+          "qty": 1,
+          "price": 800
+        },
+        {
+          "desc": "Extra materials for irrigation",
+          "qty": 2,
+          "price": 150
+        }
+      ],
+      "taxRate": 5,
+      "subtotal": 1100,
+      "taxAmount": 55,
+      "total": 1155,
+      "createdAt": "2026-08-04T20:22:25.797Z"
+    },
+    {
+      "id": "INV-178587494579729",
+      "serial": "1029",
+      "date": "2026-07-14",
+      "client": {
+        "id": "CUST-178587494579415",
+        "name": "Customer 15 LLC",
+        "mobile": "0550000015",
+        "email": "contact@customer15.com",
+        "address": "Street 15, Dubai, UAE",
+        "trn": "100000000000015",
+        "dateAdded": "2024-01-01"
+      },
+      "items": [
+        {
+          "desc": "Landscaping service - Month 6",
+          "qty": 1,
+          "price": 790
+        }
+      ],
+      "taxRate": 5,
+      "subtotal": 790,
+      "taxAmount": 39.5,
+      "total": 829.5,
+      "createdAt": "2026-08-04T20:22:25.797Z"
+    },
+    {
+      "id": "INV-178587494579728",
+      "serial": "1028",
+      "date": "2026-07-13",
+      "client": {
+        "id": "CUST-178587494579414",
+        "name": "Customer 14 LLC",
+        "mobile": "0550000014",
+        "email": "contact@customer14.com",
+        "address": "Street 14, Dubai, UAE",
+        "trn": "100000000000014",
+        "dateAdded": "2024-01-01"
+      },
+      "items": [
+        {
+          "desc": "Landscaping service - Month 5",
+          "qty": 1,
+          "price": 780
+        }
+      ],
+      "taxRate": 5,
+      "subtotal": 780,
+      "taxAmount": 39,
+      "total": 819,
+      "createdAt": "2026-08-04T20:22:25.797Z"
+    },
+    {
+      "id": "INV-178587494579727",
+      "serial": "1027",
+      "date": "2026-07-12",
+      "client": {
+        "id": "CUST-178587494579413",
+        "name": "Customer 13 LLC",
+        "mobile": "0550000013",
+        "email": "contact@customer13.com",
+        "address": "Street 13, Dubai, UAE",
+        "trn": "100000000000013",
+        "dateAdded": "2024-01-01"
+      },
+      "items": [
+        {
+          "desc": "Landscaping service - Month 4",
+          "qty": 1,
+          "price": 770
+        },
+        {
+          "desc": "Extra materials for irrigation",
+          "qty": 2,
+          "price": 150
+        }
+      ],
+      "taxRate": 5,
+      "subtotal": 1070,
+      "taxAmount": 53.5,
+      "total": 1123.5,
+      "createdAt": "2026-08-04T20:22:25.797Z"
+    },
+    {
+      "id": "INV-178587494579726",
+      "serial": "1026",
+      "date": "2026-07-11",
+      "client": {
+        "id": "CUST-178587494579412",
+        "name": "Customer 12 LLC",
+        "mobile": "0550000012",
+        "email": "contact@customer12.com",
+        "address": "Street 12, Dubai, UAE",
+        "trn": "100000000000012",
+        "dateAdded": "2024-01-01"
+      },
+      "items": [
+        {
+          "desc": "Landscaping service - Month 3",
+          "qty": 1,
+          "price": 760
+        }
+      ],
+      "taxRate": 5,
+      "subtotal": 760,
+      "taxAmount": 38,
+      "total": 798,
+      "createdAt": "2026-08-04T20:22:25.797Z"
+    },
+    {
+      "id": "INV-178587494579725",
+      "serial": "1025",
+      "date": "2026-07-10",
+      "client": {
+        "id": "CUST-178587494579411",
+        "name": "Customer 11 LLC",
+        "mobile": "0550000011",
+        "email": "contact@customer11.com",
+        "address": "Street 11, Dubai, UAE",
+        "trn": "100000000000011",
+        "dateAdded": "2024-01-01"
+      },
+      "items": [
+        {
+          "desc": "Landscaping service - Month 2",
+          "qty": 1,
+          "price": 750
+        }
+      ],
+      "taxRate": 5,
+      "subtotal": 750,
+      "taxAmount": 37.5,
+      "total": 787.5,
+      "createdAt": "2026-08-04T20:22:25.797Z"
+    },
+    {
+      "id": "INV-178587494579723",
+      "serial": "1023",
+      "date": "2026-07-08",
+      "client": {
+        "id": "CUST-17858749457949",
+        "name": "Customer 9 LLC",
+        "mobile": "0550000009",
+        "email": "contact@customer9.com",
+        "address": "Street 9, Dubai, UAE",
+        "trn": "100000000000009",
+        "dateAdded": "2024-01-01"
+      },
+      "items": [
+        {
+          "desc": "Landscaping service - Month 12",
+          "qty": 1,
+          "price": 730
+        }
+      ],
+      "taxRate": 5,
+      "subtotal": 730,
+      "taxAmount": 36.5,
+      "total": 766.5,
+      "createdAt": "2026-08-04T20:22:25.797Z"
+    },
+    {
+      "id": "INV-178587494579722",
+      "serial": "1022",
+      "date": "2026-07-07",
+      "client": {
+        "id": "CUST-17858749457948",
+        "name": "Customer 8 LLC",
+        "mobile": "0550000008",
+        "email": "contact@customer8.com",
+        "address": "Street 8, Dubai, UAE",
+        "trn": "100000000000008",
+        "dateAdded": "2024-01-01"
+      },
+      "items": [
+        {
+          "desc": "Landscaping service - Month 11",
+          "qty": 1,
+          "price": 720
+        }
+      ],
+      "taxRate": 5,
+      "subtotal": 720,
+      "taxAmount": 36,
+      "total": 756,
+      "createdAt": "2026-08-04T20:22:25.797Z"
+    },
+    {
+      "id": "INV-178587494579721",
+      "serial": "1021",
+      "date": "2026-07-06",
+      "client": {
+        "id": "CUST-17858749457947",
+        "name": "Customer 7 LLC",
+        "mobile": "0550000007",
+        "email": "contact@customer7.com",
+        "address": "Street 7, Dubai, UAE",
+        "trn": "100000000000007",
+        "dateAdded": "2024-01-01"
+      },
+      "items": [
+        {
+          "desc": "Landscaping service - Month 10",
+          "qty": 1,
+          "price": 710
+        },
+        {
+          "desc": "Extra materials for irrigation",
+          "qty": 2,
+          "price": 150
+        }
+      ],
+      "taxRate": 5,
+      "subtotal": 1010,
+      "taxAmount": 50.5,
+      "total": 1060.5,
+      "createdAt": "2026-08-04T20:22:25.797Z"
+    },
+    {
+      "id": "INV-178587494579720",
+      "serial": "1020",
+      "date": "2026-07-05",
+      "client": {
+        "id": "CUST-17858749457946",
+        "name": "Customer 6 LLC",
+        "mobile": "0550000006",
+        "email": "contact@customer6.com",
+        "address": "Street 6, Dubai, UAE",
+        "trn": "100000000000006",
+        "dateAdded": "2024-01-01"
+      },
+      "items": [
+        {
+          "desc": "Landscaping service - Month 9",
+          "qty": 1,
+          "price": 700
+        }
+      ],
+      "taxRate": 5,
+      "subtotal": 700,
+      "taxAmount": 35,
+      "total": 735,
+      "createdAt": "2026-08-04T20:22:25.797Z"
+    },
+    {
+      "id": "INV-178587494579719",
+      "serial": "1019",
+      "date": "2026-07-04",
+      "client": {
+        "id": "CUST-17858749457945",
+        "name": "Customer 5 LLC",
+        "mobile": "0550000005",
+        "email": "contact@customer5.com",
+        "address": "Street 5, Dubai, UAE",
+        "trn": "100000000000005",
+        "dateAdded": "2024-01-01"
+      },
+      "items": [
+        {
+          "desc": "Landscaping service - Month 8",
+          "qty": 1,
+          "price": 690
+        }
+      ],
+      "taxRate": 5,
+      "subtotal": 690,
+      "taxAmount": 34.5,
+      "total": 724.5,
+      "createdAt": "2026-08-04T20:22:25.797Z"
+    },
+    {
+      "id": "INV-178587494579718",
+      "serial": "1018",
+      "date": "2026-07-03",
+      "client": {
+        "id": "CUST-17858749457944",
+        "name": "Customer 4 LLC",
+        "mobile": "0550000004",
+        "email": "contact@customer4.com",
+        "address": "Street 4, Dubai, UAE",
+        "trn": "100000000000004",
+        "dateAdded": "2024-01-01"
+      },
+      "items": [
+        {
+          "desc": "Landscaping service - Month 7",
+          "qty": 1,
+          "price": 680
+        },
+        {
+          "desc": "Extra materials for irrigation",
+          "qty": 2,
+          "price": 150
+        }
+      ],
+      "taxRate": 5,
+      "subtotal": 980,
+      "taxAmount": 49,
+      "total": 1029,
+      "createdAt": "2026-08-04T20:22:25.797Z"
+    },
+    {
+      "id": "INV-178587494579717",
+      "serial": "1017",
+      "date": "2026-07-02",
+      "client": {
+        "id": "CUST-17858749457943",
+        "name": "Customer 3 LLC",
+        "mobile": "0550000003",
+        "email": "contact@customer3.com",
+        "address": "Street 3, Dubai, UAE",
+        "trn": "100000000000003",
+        "dateAdded": "2024-01-01"
+      },
+      "items": [
+        {
+          "desc": "Landscaping service - Month 6",
+          "qty": 1,
+          "price": 670
+        }
+      ],
+      "taxRate": 5,
+      "subtotal": 670,
+      "taxAmount": 33.5,
+      "total": 703.5,
+      "createdAt": "2026-08-04T20:22:25.797Z"
+    },
+    {
+      "id": "INV-178587494579716",
+      "serial": "1016",
+      "date": "2026-07-01",
+      "client": {
+        "id": "CUST-17858749457942",
+        "name": "Customer 2 LLC",
+        "mobile": "0550000002",
+        "email": "contact@customer2.com",
+        "address": "Street 2, Dubai, UAE",
+        "trn": "100000000000002",
+        "dateAdded": "2024-01-01"
+      },
+      "items": [
+        {
+          "desc": "Landscaping service - Month 5",
+          "qty": 1,
+          "price": 660
+        }
+      ],
+      "taxRate": 5,
+      "subtotal": 660,
+      "taxAmount": 33,
+      "total": 693,
+      "createdAt": "2026-08-04T20:22:25.797Z"
+    },
+    {
+      "id": "INV-178587494579715",
+      "serial": "1015",
+      "date": "2026-06-30",
+      "client": {
+        "id": "CUST-17858749457941",
+        "name": "Customer 1 LLC",
+        "mobile": "0550000001",
+        "email": "contact@customer1.com",
+        "address": "Street 1, Dubai, UAE",
+        "trn": "100000000000001",
+        "dateAdded": "2024-01-01"
+      },
+      "items": [
+        {
+          "desc": "Landscaping service - Month 4",
+          "qty": 1,
+          "price": 650
+        },
+        {
+          "desc": "Extra materials for irrigation",
+          "qty": 2,
+          "price": 150
+        }
+      ],
+      "taxRate": 5,
+      "subtotal": 950,
+      "taxAmount": 47.5,
+      "total": 997.5,
+      "createdAt": "2026-08-04T20:22:25.797Z"
+    },
+    {
+      "id": "INV-178587494579714",
+      "serial": "1014",
+      "date": "2026-06-29",
+      "client": {
+        "id": "CUST-178587494579415",
+        "name": "Customer 15 LLC",
+        "mobile": "0550000015",
+        "email": "contact@customer15.com",
+        "address": "Street 15, Dubai, UAE",
+        "trn": "100000000000015",
+        "dateAdded": "2024-01-01"
+      },
+      "items": [
+        {
+          "desc": "Landscaping service - Month 3",
+          "qty": 1,
+          "price": 640
+        }
+      ],
+      "taxRate": 5,
+      "subtotal": 640,
+      "taxAmount": 32,
+      "total": 672,
+      "createdAt": "2026-08-04T20:22:25.797Z"
+    },
+    {
+      "id": "INV-178587494579713",
+      "serial": "1013",
+      "date": "2026-06-28",
+      "client": {
+        "id": "CUST-178587494579414",
+        "name": "Customer 14 LLC",
+        "mobile": "0550000014",
+        "email": "contact@customer14.com",
+        "address": "Street 14, Dubai, UAE",
+        "trn": "100000000000014",
+        "dateAdded": "2024-01-01"
+      },
+      "items": [
+        {
+          "desc": "Landscaping service - Month 2",
+          "qty": 1,
+          "price": 630
+        }
+      ],
+      "taxRate": 5,
+      "subtotal": 630,
+      "taxAmount": 31.5,
+      "total": 661.5,
+      "createdAt": "2026-08-04T20:22:25.797Z"
+    },
+    {
+      "id": "INV-178587494579712",
+      "serial": "1012",
+      "date": "2026-06-27",
+      "client": {
+        "id": "CUST-178587494579413",
+        "name": "Customer 13 LLC",
+        "mobile": "0550000013",
+        "email": "contact@customer13.com",
+        "address": "Street 13, Dubai, UAE",
+        "trn": "100000000000013",
+        "dateAdded": "2024-01-01"
+      },
+      "items": [
+        {
+          "desc": "Landscaping service - Month 1",
+          "qty": 1,
+          "price": 620
+        },
+        {
+          "desc": "Extra materials for irrigation",
+          "qty": 2,
+          "price": 150
+        }
+      ],
+      "taxRate": 5,
+      "subtotal": 920,
+      "taxAmount": 46,
+      "total": 966,
+      "createdAt": "2026-08-04T20:22:25.797Z"
+    },
+    {
+      "id": "INV-178587494579711",
+      "serial": "1011",
+      "date": "2026-06-26",
+      "client": {
+        "id": "CUST-178587494579412",
+        "name": "Customer 12 LLC",
+        "mobile": "0550000012",
+        "email": "contact@customer12.com",
+        "address": "Street 12, Dubai, UAE",
+        "trn": "100000000000012",
+        "dateAdded": "2024-01-01"
+      },
+      "items": [
+        {
+          "desc": "Landscaping service - Month 12",
+          "qty": 1,
+          "price": 610
+        }
+      ],
+      "taxRate": 5,
+      "subtotal": 610,
+      "taxAmount": 30.5,
+      "total": 640.5,
+      "createdAt": "2026-08-04T20:22:25.797Z"
+    },
+    {
+      "id": "INV-178587494579710",
+      "serial": "1010",
+      "date": "2026-06-25",
+      "client": {
+        "id": "CUST-178587494579411",
+        "name": "Customer 11 LLC",
+        "mobile": "0550000011",
+        "email": "contact@customer11.com",
+        "address": "Street 11, Dubai, UAE",
+        "trn": "100000000000011",
+        "dateAdded": "2024-01-01"
+      },
+      "items": [
+        {
+          "desc": "Landscaping service - Month 11",
+          "qty": 1,
+          "price": 600
+        }
+      ],
+      "taxRate": 5,
+      "subtotal": 600,
+      "taxAmount": 30,
+      "total": 630,
+      "createdAt": "2026-08-04T20:22:25.797Z"
+    },
+    {
+      "id": "INV-17858749457979",
+      "serial": "1009",
+      "date": "2026-06-24",
+      "client": {
+        "id": "CUST-178587494579410",
+        "name": "Customer 10 LLC",
+        "mobile": "0550000010",
+        "email": "contact@customer10.com",
+        "address": "Street 10, Dubai, UAE",
+        "trn": "100000000000010",
+        "dateAdded": "2024-01-01"
+      },
+      "items": [
+        {
+          "desc": "Landscaping service - Month 10",
+          "qty": 1,
+          "price": 590
+        },
+        {
+          "desc": "Extra materials for irrigation",
+          "qty": 2,
+          "price": 150
+        }
+      ],
+      "taxRate": 5,
+      "subtotal": 890,
+      "taxAmount": 44.5,
+      "total": 934.5,
+      "createdAt": "2026-08-04T20:22:25.797Z"
+    },
+    {
+      "id": "INV-17858749457978",
+      "serial": "1008",
+      "date": "2026-06-23",
+      "client": {
+        "id": "CUST-17858749457949",
+        "name": "Customer 9 LLC",
+        "mobile": "0550000009",
+        "email": "contact@customer9.com",
+        "address": "Street 9, Dubai, UAE",
+        "trn": "100000000000009",
+        "dateAdded": "2024-01-01"
+      },
+      "items": [
+        {
+          "desc": "Landscaping service - Month 9",
+          "qty": 1,
+          "price": 580
+        }
+      ],
+      "taxRate": 5,
+      "subtotal": 580,
+      "taxAmount": 29,
+      "total": 609,
+      "createdAt": "2026-08-04T20:22:25.797Z"
+    },
+    {
+      "id": "INV-17858749457977",
+      "serial": "1007",
+      "date": "2026-06-22",
+      "client": {
+        "id": "CUST-17858749457948",
+        "name": "Customer 8 LLC",
+        "mobile": "0550000008",
+        "email": "contact@customer8.com",
+        "address": "Street 8, Dubai, UAE",
+        "trn": "100000000000008",
+        "dateAdded": "2024-01-01"
+      },
+      "items": [
+        {
+          "desc": "Landscaping service - Month 8",
+          "qty": 1,
+          "price": 570
+        }
+      ],
+      "taxRate": 5,
+      "subtotal": 570,
+      "taxAmount": 28.5,
+      "total": 598.5,
+      "createdAt": "2026-08-04T20:22:25.797Z"
+    },
+    {
+      "id": "INV-17858749457976",
+      "serial": "1006",
+      "date": "2026-06-21",
+      "client": {
+        "id": "CUST-17858749457947",
+        "name": "Customer 7 LLC",
+        "mobile": "0550000007",
+        "email": "contact@customer7.com",
+        "address": "Street 7, Dubai, UAE",
+        "trn": "100000000000007",
+        "dateAdded": "2024-01-01"
+      },
+      "items": [
+        {
+          "desc": "Landscaping service - Month 7",
+          "qty": 1,
+          "price": 560
+        },
+        {
+          "desc": "Extra materials for irrigation",
+          "qty": 2,
+          "price": 150
+        }
+      ],
+      "taxRate": 5,
+      "subtotal": 860,
+      "taxAmount": 43,
+      "total": 903,
+      "createdAt": "2026-08-04T20:22:25.797Z"
+    },
+    {
+      "id": "INV-17858749457975",
+      "serial": "1005",
+      "date": "2026-06-20",
+      "client": {
+        "id": "CUST-17858749457946",
+        "name": "Customer 6 LLC",
+        "mobile": "0550000006",
+        "email": "contact@customer6.com",
+        "address": "Street 6, Dubai, UAE",
+        "trn": "100000000000006",
+        "dateAdded": "2024-01-01"
+      },
+      "items": [
+        {
+          "desc": "Landscaping service - Month 6",
+          "qty": 1,
+          "price": 550
+        }
+      ],
+      "taxRate": 5,
+      "subtotal": 550,
+      "taxAmount": 27.5,
+      "total": 577.5,
+      "createdAt": "2026-08-04T20:22:25.797Z"
+    },
+    {
+      "id": "INV-17858749457974",
+      "serial": "1004",
+      "date": "2026-06-19",
+      "client": {
+        "id": "CUST-17858749457945",
+        "name": "Customer 5 LLC",
+        "mobile": "0550000005",
+        "email": "contact@customer5.com",
+        "address": "Street 5, Dubai, UAE",
+        "trn": "100000000000005",
+        "dateAdded": "2024-01-01"
+      },
+      "items": [
+        {
+          "desc": "Landscaping service - Month 5",
+          "qty": 1,
+          "price": 540
+        }
+      ],
+      "taxRate": 5,
+      "subtotal": 540,
+      "taxAmount": 27,
+      "total": 567,
+      "createdAt": "2026-08-04T20:22:25.797Z"
+    },
+    {
+      "id": "INV-17858749457973",
+      "serial": "1003",
+      "date": "2026-06-18",
+      "client": {
+        "id": "CUST-17858749457944",
+        "name": "Customer 4 LLC",
+        "mobile": "0550000004",
+        "email": "contact@customer4.com",
+        "address": "Street 4, Dubai, UAE",
+        "trn": "100000000000004",
+        "dateAdded": "2024-01-01"
+      },
+      "items": [
+        {
+          "desc": "Landscaping service - Month 4",
+          "qty": 1,
+          "price": 530
+        },
+        {
+          "desc": "Extra materials for irrigation",
+          "qty": 2,
+          "price": 150
+        }
+      ],
+      "taxRate": 5,
+      "subtotal": 830,
+      "taxAmount": 41.5,
+      "total": 871.5,
+      "createdAt": "2026-08-04T20:22:25.797Z"
+    },
+    {
+      "id": "INV-17858749457972",
+      "serial": "1002",
+      "date": "2026-06-17",
+      "client": {
+        "id": "CUST-17858749457943",
+        "name": "Customer 3 LLC",
+        "mobile": "0550000003",
+        "email": "contact@customer3.com",
+        "address": "Street 3, Dubai, UAE",
+        "trn": "100000000000003",
+        "dateAdded": "2024-01-01"
+      },
+      "items": [
+        {
+          "desc": "Landscaping service - Month 3",
+          "qty": 1,
+          "price": 520
+        }
+      ],
+      "taxRate": 5,
+      "subtotal": 520,
+      "taxAmount": 26,
+      "total": 546,
+      "createdAt": "2026-08-04T20:22:25.797Z"
+    },
+    {
+      "id": "INV-17858749457971",
+      "serial": "1001",
+      "date": "2026-06-16",
+      "client": {
+        "id": "CUST-17858749457942",
+        "name": "Customer 2 LLC",
+        "mobile": "0550000002",
+        "email": "contact@customer2.com",
+        "address": "Street 2, Dubai, UAE",
+        "trn": "100000000000002",
+        "dateAdded": "2024-01-01"
+      },
+      "items": [
+        {
+          "desc": "Landscaping service - Month 2",
+          "qty": 1,
+          "price": 510
+        }
+      ],
+      "taxRate": 5,
+      "subtotal": 510,
+      "taxAmount": 25.5,
+      "total": 535.5,
+      "createdAt": "2026-08-04T20:22:25.797Z"
+    },
+    {
+      "id": "INV-1785877486598",
+      "serial": "1600",
+      "date": "2026-08-04",
+      "client": {
+        "name": "sharjeel Ahmed",
+        "mobile": "03113007330",
+        "email": "sharjeel@gmail.com",
+        "address": "House no 15 A cheema town Bahwalpur",
+        "trn": "248247826784825"
+      },
+      "items": [
+        {
+          "desc": "Appe for one tea spoon sugar withe new jerssy style in wiinter",
+          "qty": 23,
+          "price": 2334
+        },
+        {
+          "desc": "juice of watermelon of ",
+          "qty": 23,
+          "price": 23
+        }
+      ],
+      "taxRate": 5,
+      "subtotal": 54211,
+      "taxAmount": 2710.55,
+      "total": 56921.55,
+      "createdAt": "2026-08-04T21:06:39.740Z"
+    }
+  ],
+  "customers": [
+    {
+      "id": "CUST-17858749457941",
+      "name": "Customer 1 LLC",
+      "mobile": "0550000001",
+      "email": "contact@customer1.com",
+      "address": "Street 1, Dubai, UAE",
+      "trn": "100000000000001",
+      "dateAdded": "2024-01-01"
+    },
+    {
+      "id": "CUST-17858749457942",
+      "name": "Customer 2 LLC",
+      "mobile": "0550000002",
+      "email": "contact@customer2.com",
+      "address": "Street 2, Dubai, UAE",
+      "trn": "100000000000002",
+      "dateAdded": "2024-01-01"
+    },
+    {
+      "id": "CUST-17858749457943",
+      "name": "Customer 3 LLC",
+      "mobile": "0550000003",
+      "email": "contact@customer3.com",
+      "address": "Street 3, Dubai, UAE",
+      "trn": "100000000000003",
+      "dateAdded": "2024-01-01"
+    },
+    {
+      "id": "CUST-17858749457944",
+      "name": "Customer 4 LLC",
+      "mobile": "0550000004",
+      "email": "contact@customer4.com",
+      "address": "Street 4, Dubai, UAE",
+      "trn": "100000000000004",
+      "dateAdded": "2024-01-01"
+    },
+    {
+      "id": "CUST-17858749457945",
+      "name": "Customer 5 LLC",
+      "mobile": "0550000005",
+      "email": "contact@customer5.com",
+      "address": "Street 5, Dubai, UAE",
+      "trn": "100000000000005",
+      "dateAdded": "2024-01-01"
+    },
+    {
+      "id": "CUST-17858749457946",
+      "name": "Customer 6 LLC",
+      "mobile": "0550000006",
+      "email": "contact@customer6.com",
+      "address": "Street 6, Dubai, UAE",
+      "trn": "100000000000006",
+      "dateAdded": "2024-01-01"
+    },
+    {
+      "id": "CUST-17858749457947",
+      "name": "Customer 7 LLC",
+      "mobile": "0550000007",
+      "email": "contact@customer7.com",
+      "address": "Street 7, Dubai, UAE",
+      "trn": "100000000000007",
+      "dateAdded": "2024-01-01"
+    },
+    {
+      "id": "CUST-17858749457948",
+      "name": "Customer 8 LLC",
+      "mobile": "0550000008",
+      "email": "contact@customer8.com",
+      "address": "Street 8, Dubai, UAE",
+      "trn": "100000000000008",
+      "dateAdded": "2024-01-01"
+    },
+    {
+      "id": "CUST-17858749457949",
+      "name": "Customer 9 LLC",
+      "mobile": "0550000009",
+      "email": "contact@customer9.com",
+      "address": "Street 9, Dubai, UAE",
+      "trn": "100000000000009",
+      "dateAdded": "2024-01-01"
+    },
+    {
+      "id": "CUST-178587494579410",
+      "name": "Customer 10 LLC",
+      "mobile": "0550000010",
+      "email": "contact@customer10.com",
+      "address": "Street 10, Dubai, UAE",
+      "trn": "100000000000010",
+      "dateAdded": "2024-01-01"
+    },
+    {
+      "id": "CUST-178587494579411",
+      "name": "Customer 11 LLC",
+      "mobile": "0550000011",
+      "email": "contact@customer11.com",
+      "address": "Street 11, Dubai, UAE",
+      "trn": "100000000000011",
+      "dateAdded": "2024-01-01"
+    },
+    {
+      "id": "CUST-178587494579412",
+      "name": "Customer 12 LLC",
+      "mobile": "0550000012",
+      "email": "contact@customer12.com",
+      "address": "Street 12, Dubai, UAE",
+      "trn": "100000000000012",
+      "dateAdded": "2024-01-01"
+    },
+    {
+      "id": "CUST-178587494579413",
+      "name": "Customer 13 LLC",
+      "mobile": "0550000013",
+      "email": "contact@customer13.com",
+      "address": "Street 13, Dubai, UAE",
+      "trn": "100000000000013",
+      "dateAdded": "2024-01-01"
+    },
+    {
+      "id": "CUST-178587494579414",
+      "name": "Customer 14 LLC",
+      "mobile": "0550000014",
+      "email": "contact@customer14.com",
+      "address": "Street 14, Dubai, UAE",
+      "trn": "100000000000014",
+      "dateAdded": "2024-01-01"
+    },
+    {
+      "id": "CUST-178587494579415",
+      "name": "Customer 15 LLC",
+      "mobile": "0550000015",
+      "email": "contact@customer15.com",
+      "address": "Street 15, Dubai, UAE",
+      "trn": "100000000000015",
+      "dateAdded": "2024-01-01"
+    },
+    {
+      "name": "sharjeel Ahmed",
+      "mobile": "03113007330",
+      "email": "sharjeel@gmail.com",
+      "address": "House no 15 A cheema town Bahwalpur",
+      "trn": "248247826784825",
+      "dateAdded": "2026-08-04",
+      "id": "CUST-1785877486715"
+    },
+    {
+      "id": "CUST-1785878313681",
+      "name": "Sharukh",
+      "mobile": "23813818",
+      "email": "",
+      "address": "London Bridge",
+      "trn": "183891624786278",
+      "dateAdded": "2026-08-04"
+    }
+  ],
+  "settings": {
+    "id": "app_settings",
+    "startingInvoiceNo": 1601,
+    "vatRate": 5
+  }
+}

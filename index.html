@@ -21,7 +21,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 
     <!-- Styles -->
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="src/assets/css/styles.css">
 </head>
 <body>
     <div id="app">
@@ -50,7 +50,7 @@
             </nav>
             
             <div class="sidebar-footer">
-                <img src="assets/images/sharjeelLogo.png" alt="Sharjeel Logo">
+                <img src="src/assets/images/sharjeelLogo.png" alt="Sharjeel Logo">
             </div>
         </aside>
 
@@ -65,6 +65,23 @@
                             <i data-lucide="search" style="width: 1rem; height: 1rem; color: var(--gray-400); margin-right: 0.5rem;"></i>
                             <input type="text" id="search-invoice" placeholder="Search by name or number...">
                         </div>
+                        <div class="date-filter">
+                            <div style="display: flex; align-items: center; gap: 0.5rem;">
+                                <i data-lucide="calendar" style="width: 1rem; height: 1rem; color: var(--primary-500);"></i>
+                                <input type="date" id="filter-start-date" title="Start Date">
+                            </div>
+                            <span style="color: var(--gray-400); font-size: 0.85rem; font-weight: 600;">→</span>
+                            <div style="display: flex; align-items: center; gap: 0.5rem;">
+                                <i data-lucide="calendar" style="width: 1rem; height: 1rem; color: var(--primary-500);"></i>
+                                <input type="date" id="filter-end-date" title="End Date">
+                            </div>
+                            <button id="btn-clear-dates" class="btn-icon" title="Clear Dates" style="display: flex; align-items: center; justify-content: center; width: 26px; height: 26px; border-radius: 50%; color: #ef4444; background: #fee2e2; transition: all 0.2s ease; margin-left: 0.25rem;" onmouseover="this.style.background='#fca5a5'; this.style.color='#b91c1c';" onmouseout="this.style.background='#fee2e2'; this.style.color='#ef4444';">
+                                <i data-lucide="x" style="width: 0.875rem; height: 0.875rem;"></i>
+                            </button>
+                        </div>
+                        <button class="btn btn-secondary" id="btn-download-filtered-invoices" style="display: none;">
+                            <i data-lucide="download"></i> Download Invoices
+                        </button>
                         <button class="btn btn-primary" id="btn-create-invoice">
                             <i data-lucide="plus"></i> Create Invoice
                         </button>
@@ -77,6 +94,13 @@
                         <div class="stat-info">
                             <span class="stat-label">Total Invoices</span>
                             <span class="stat-value" id="stat-total-count">0</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon"><i data-lucide="percent"></i></div>
+                        <div class="stat-info">
+                            <span class="stat-label">Total VAT</span>
+                            <span class="stat-value" id="stat-total-vat">0.00</span>
                         </div>
                     </div>
                     <div class="stat-card">
@@ -146,6 +170,9 @@
                         </tbody>
                     </table>
                 </div>
+                
+                <!-- Hidden In-DOM Filtered Invoices Report Container -->
+                <div id="filtered-report-document" class="invoice-document" style="display: none; width: 210mm; min-height: 280mm; background: #ffffff; padding: 1.5rem 2.5rem; margin: 2rem auto; box-sizing: border-box; box-shadow: 0 0 20px rgba(0,0,0,0.1);"></div>
             </section>
 
             <!-- New/Edit Customer View -->
@@ -258,6 +285,9 @@
                         <button class="btn btn-secondary btn-back-dashboard">
                             <i data-lucide="arrow-left"></i> Back
                         </button>
+                        <button class="btn btn-secondary" id="btn-editor-download-pdf">
+                            <i data-lucide="download"></i> Download PDF
+                        </button>
                         <button class="btn btn-secondary" id="btn-preview">
                             <i data-lucide="eye"></i> Preview
                         </button>
@@ -287,7 +317,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="form-row">
+                                <div class="form-row-3">
                                     <div class="form-group" style="position: relative;">
                                         <label for="clientName">Client Name</label>
                                         <input type="text" id="clientName" required placeholder="John Doe" autocomplete="off">
@@ -297,20 +327,20 @@
                                         <label for="clientMobile">Mobile Number (Optional)</label>
                                         <input type="text" id="clientMobile" placeholder="0551234567" oninput="this.value = this.value.replace(/[^0-9]/g, '')">
                                     </div>
+                                    <div class="form-group">
+                                        <label for="clientTRN">Customer TRN</label>
+                                        <input type="text" id="clientTRN" maxlength="15" minlength="15" pattern="\d{15}" title="TRN must be exactly 15 digits" placeholder="123456789012345" oninput="this.value = this.value.replace(/[^0-9]/g, '')">
+                                    </div>
                                 </div>
-                                <div class="form-row">
-                                    <div class="form-group" style="grid-column: span 2;">
+                                <div class="form-row" style="grid-template-columns: 1fr 2fr;">
+                                    <div class="form-group">
                                         <label for="clientEmail">Email (Optional)</label>
                                         <input type="email" id="clientEmail" placeholder="john@example.com">
                                     </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="clientAddress">Billing Address</label>
-                                    <textarea id="clientAddress" rows="2" placeholder="123 Main St..."></textarea>
-                                </div>
-                                <div class="form-group">
-                                    <label for="clientTRN">Customer TRN</label>
-                                    <input type="text" id="clientTRN" maxlength="15" minlength="15" pattern="\d{15}" title="TRN must be exactly 15 digits" placeholder="123456789012345" oninput="this.value = this.value.replace(/[^0-9]/g, '')">
+                                    <div class="form-group">
+                                        <label for="clientAddress">Billing Address</label>
+                                        <input type="text" id="clientAddress" placeholder="123 Main St, City, UAE">
+                                    </div>
                                 </div>
                             </div>
 
@@ -483,8 +513,8 @@
     </div>
 
     <!-- Scripts -->
-    <script src="assets/js/db.js"></script>
-    <script src="assets/js/app.js"></script>
+    <script src="src/assets/js/db.js"></script>
+    <script src="src/assets/js/app.js"></script>
 </body>
 </html>
 
