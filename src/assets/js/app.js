@@ -282,9 +282,12 @@ document.addEventListener('DOMContentLoaded', async () => {
         priceInput.value = '0.00';
         descInput.focus();
     });
-    document.getElementById('btn-editor-download-pdf').addEventListener('click', downloadPDFFromEditor);
+    const btnEditorDownloadPdf = document.getElementById('btn-editor-download-pdf');
+    if (btnEditorDownloadPdf) {
+        btnEditorDownloadPdf.addEventListener('click', saveAndDownloadInvoice);
+    }
     document.getElementById('btn-preview').addEventListener('click', previewInvoice);
-    document.getElementById('btn-save').addEventListener('click', () => saveInvoice(false));
+    document.getElementById('btn-save').addEventListener('click', saveAndDownloadInvoice);
 
     // Preview Actions
     document.getElementById('btn-back-editor').addEventListener('click', () => switchView('invoice-editor'));
@@ -671,8 +674,11 @@ function previewInvoice() {
     switchView('preview');
 }
 
-async function downloadPDFFromEditor() {
-    // 1. Automatically save the invoice first (silently into database/dashboard)
+async function saveAndDownloadInvoice() {
+    const saveBtn = document.getElementById('btn-save');
+    if (saveBtn && saveBtn.disabled) return;
+
+    // 1. Automatically validate and save the invoice first (silently into database/dashboard)
     const saved = await saveInvoice(true);
     if (!saved) return;
 
@@ -680,10 +686,12 @@ async function downloadPDFFromEditor() {
     if (!populatePreviewDOM()) return;
 
     // 3. Generate and download PDF
-    const editorBtn = document.getElementById('btn-editor-download-pdf');
     switchView('preview');
-    await downloadPDF(editorBtn);
-    switchView('invoice-editor');
+    await downloadPDF(saveBtn);
+
+    // 4. Show success alert and return to dashboard
+    alert('Invoice saved successfully!');
+    switchView('dashboard');
 }
 
 function numberToWords(num) {
