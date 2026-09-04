@@ -279,7 +279,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         // Reset the form fields
         descInput.value = '';
         qtyInput.value = 1;
-        priceInput.value = '0.00';
+        priceInput.value = '';
         descInput.focus();
     });
     const btnEditorDownloadPdf = document.getElementById('btn-editor-download-pdf');
@@ -537,7 +537,7 @@ function addLineItem(data = null) {
         <td class="item-sno font-medium text-center" style="vertical-align: middle;"></td>
         <td><input type="text" class="item-desc" placeholder="Item description" value="${data ? escapeHTML(data.desc) : ''}" required></td>
         <td><input type="number" class="item-qty input-sm" min="1" value="${data ? data.qty : 1}" required></td>
-        <td><input type="number" class="item-price input-sm" min="0" step="0.01" value="${data ? data.price : 0}" required></td>
+        <td><input type="number" class="item-price input-sm" min="0" step="0.01" value="${data && data.price !== undefined && data.price !== null ? data.price : ''}" placeholder="0.00" required></td>
         <td class="item-total-text font-medium">0.00</td>
         <td><button type="button" class="btn-icon btn-delete" onclick="this.closest('tr').remove(); calculateTotals(); updateSerialNumbers();"><i data-lucide="trash-2"></i></button></td>
     `;
