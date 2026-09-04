@@ -136,7 +136,8 @@ class InvoiceDB {
     }
 
     async findCustomerByName(name) {
-        return this.data.customers.find(c => c.name.toLowerCase() === name.toLowerCase());
+        if (!name || typeof name !== 'string') return null;
+        return this.data.customers.find(c => c && c.name && c.name.trim().toLowerCase() === name.trim().toLowerCase());
     }
 
     // --- Settings Methods ---
